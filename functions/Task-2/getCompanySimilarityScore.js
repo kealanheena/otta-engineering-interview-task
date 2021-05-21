@@ -19,16 +19,16 @@ module.exports = function getCompanySimilarityScore(reactionsData, jobsData) {
 
           similarityScoreArray = {
             similarityScore: numOfMatches,
-            users: [property_1, property_2]
+            companies: [property_1, property_2]
           }
         } else if(numOfMatches === maxNumOfMatches) {
-          similarityScoreArray.users.push(property_1, property_2)
+          similarityScoreArray.companies.push(property_1, property_2)
         }
       }
     }
   }
 
-  similarityScoreArray.users = similarityScoreArray.users.filter((item, index) => similarityScoreArray.users.indexOf(item) === index)
+  similarityScoreArray.companies = similarityScoreArray.companies.filter((item, index) => similarityScoreArray.companies.indexOf(item) === index)
 
   return similarityScoreArray
 }
