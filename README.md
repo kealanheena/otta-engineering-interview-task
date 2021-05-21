@@ -25,7 +25,7 @@ The reaction data consists of four columns:
 
 **Task**: The similarity score between two users is the number of jobs which they both like. Find the two users with the highest similarity.
 
-**Answer**: _[Enter the two user IDs & their similarity score here]_
+**Answer**: _similarityScore: 181, users: [ '1791', '5193' ]_
 
 ### Task 2
 
@@ -33,7 +33,7 @@ In the `data` folder there is an additional CSV file called `jobs.csv`. It conta
 
 **Task**: The similarity score between two companies is the number of users who like at least one job at both companies. Using both the `reactions.csv` and `jobs.csv` data, find the two companies with the highest similarity score.
 
-**Answer**: _[Enter the two company IDs & their similarity score here]_
+**Answer**: _similarityScore: 104, users: [ '46', '92' ]_
 
 ### Task 3
 
@@ -47,11 +47,11 @@ We don't think it's fair to ask you to build something with a UI, as we know thi
 - If the best example of your work is something you've done at a company, it's okay to link to a live deployed version
 - If you can't link to anything, a screenshot is also fine
 
-**Answer**: _[Add a link to repo/website/screenshot here]_
+**Answer**: _https://lyricfluent.com/lyrics_
 
 **Task**: Tell us about the biggest challenge you faced in building the above.
 
-**Answer**: _[Write your answer here (300 words max)]_
+**Answer**: _This task was challenging because I was using Typescript and Next.js, trying to learn these things a while getting used to the code base as well as trying to use cookies to save certain data. One of the specific challenges was trying to make some previous components and make them reusable because there were some components that were very similar. I used optional props (through the typescript interface) to add to the reusability of these components while not breaking code elsewhere. Ultimately I dif manage to reuse multiple components from other pages without adding any breaking changes while also taking care to make sure any of my components could be reused on other pages on the /lyrics route._
 
 ## Submission
 
