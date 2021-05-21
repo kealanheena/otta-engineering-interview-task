@@ -1,13 +1,10 @@
 const mockJobsData = require('../mockData/mockJobs.json');
 const mockReactionsData = require('../mockData/mockReactions.json');
 
-const jobsData = require('../../data/jobs.json');
-const reactionsData = require('../../data/reactions.json');
-
 const getCompanyApplicants = require('./getCompanyApplicants');
 const getNumOfMatches = require('../Task-1/getNumOfMatches');
 
-function getCompanySimilarityScore(reactionsData, jobsData) {
+module.exports = function getCompanySimilarityScore(reactionsData, jobsData) {
   const companyApplicants = getCompanyApplicants(reactionsData, jobsData);
   let maxNumOfMatches = 0;
   let similarityScoreArray;
@@ -35,5 +32,3 @@ function getCompanySimilarityScore(reactionsData, jobsData) {
 
   return similarityScoreArray
 }
-
-console.log(getCompanySimilarityScore(reactionsData, jobsData))
