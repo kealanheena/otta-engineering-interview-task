@@ -1,0 +1,21 @@
+{
+  "name": "otta-engineering-interview-task",
+  "version": "1.0.0",
+  "description": "tech test",
+  "main": "tasks.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon tasks.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OttaTech/otta-engineering-interview-task.git"
+  },
+  "author": "Kealan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OttaTech/otta-engineering-interview-task/issues"
+  },
+  "homepage": "https://github.com/OttaTech/otta-engineering-interview-task#readme"
+}
